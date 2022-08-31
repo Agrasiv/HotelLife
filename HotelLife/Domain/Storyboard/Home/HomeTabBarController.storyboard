@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vpn-kx-Jov">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Tab Bar Controller-->
+        <scene sceneID="2NO-Hn-AlZ">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabBarController" id="Vpn-kx-Jov" customClass="HomeTabBarController" customModule="HotelLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W4b-3P-uRz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="60I-D0-Ojh" kind="relationship" relationship="viewControllers" id="AWn-9T-PSt"/>
+                        <segue destination="bEd-ec-seT" kind="relationship" relationship="viewControllers" id="WRU-Yw-m7r"/>
+                        <segue destination="cet-4Q-EGS" kind="relationship" relationship="viewControllers" id="AN7-Yo-G5q"/>
+                        <segue destination="ZUt-xo-fkm" kind="relationship" relationship="viewControllers" id="gSe-r8-bBQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfr-EP-35x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="310"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kme-FY-NaD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="60I-D0-Ojh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tI1-43-t5l"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FR8-tg-Kpp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="722"/>
+        </scene>
+        <!--NearBy-->
+        <scene sceneID="5dd-r2-Jjp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NearBy" id="bEd-ec-seT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DTS-es-Idg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2j-X7-A8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="722"/>
+        </scene>
+        <!--SearchHotel-->
+        <scene sceneID="5ii-xl-8Vg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchHotel" id="cet-4Q-EGS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="rJm-Oh-TMV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF4-10-dzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="722"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="4Kp-nN-g6l">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="ZUt-xo-fkm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bZ4-M5-jBY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4r-nQ-qlM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="722"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nearby-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="NearBy" customModule="HotelLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QQZ-y5-cpJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Uu-Ul-NDk">
+                                <rect key="frame" x="12" y="49" width="390" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XC5-Sv-bPx">
+                                        <rect key="frame" x="0.0" y="0.0" width="352.5" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-7P-KcZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="36"/>
+                                                <subviews>
+                                                    <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="iQC-Tw-SNP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="36"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" systemColor="tintColor"/>
+                                                    </datePicker>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIw-q4-Kbj">
+                                                        <rect key="frame" x="8" y="7" width="14" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="rIw-q4-Kbj" firstAttribute="leading" secondItem="8fn-7P-KcZ" secondAttribute="leading" constant="8" id="3IM-xB-e1O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rIw-q4-Kbj" secondAttribute="bottom" constant="8" id="GhR-YJ-Vom"/>
+                                                    <constraint firstItem="rIw-q4-Kbj" firstAttribute="top" secondItem="8fn-7P-KcZ" secondAttribute="top" constant="7" id="d8T-AS-AaC"/>
+                                                    <constraint firstItem="iQC-Tw-SNP" firstAttribute="top" secondItem="8fn-7P-KcZ" secondAttribute="top" id="ePn-DN-RLZ"/>
+                                                    <constraint firstItem="iQC-Tw-SNP" firstAttribute="leading" secondItem="8fn-7P-KcZ" secondAttribute="leading" id="gfH-uO-IWm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iQC-Tw-SNP" secondAttribute="trailing" id="pIX-gT-oSt"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iQC-Tw-SNP" secondAttribute="bottom" id="xDS-Eq-T5v"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6g-a6-59k">
+                                                <rect key="frame" x="181.5" y="0.0" width="171" height="36"/>
+                                                <subviews>
+                                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-aM-UTR">
+                                                        <rect key="frame" x="20" y="0.0" width="151" height="36"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" systemColor="tintColor"/>
+                                                    </datePicker>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGR-TG-xQz">
+                                                        <rect key="frame" x="2" y="0.0" width="28" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="sGR-TG-xQz" secondAttribute="bottom" id="7mW-cx-E3U"/>
+                                                    <constraint firstItem="sGR-TG-xQz" firstAttribute="top" secondItem="B6g-a6-59k" secondAttribute="top" id="7u9-GE-0IX"/>
+                                                    <constraint firstItem="Ji3-aM-UTR" firstAttribute="leading" secondItem="B6g-a6-59k" secondAttribute="leading" constant="20" id="bHi-Do-bw5"/>
+                                                    <constraint firstItem="Ji3-aM-UTR" firstAttribute="top" secondItem="B6g-a6-59k" secondAttribute="top" id="fuc-kY-Uxu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ji3-aM-UTR" secondAttribute="trailing" id="lol-7A-Epe"/>
+                                                    <constraint firstItem="sGR-TG-xQz" firstAttribute="leading" secondItem="B6g-a6-59k" secondAttribute="leading" constant="2" id="seO-P8-AgG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ji3-aM-UTR" secondAttribute="bottom" id="xIy-IN-3zy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-2k-KnH">
+                                        <rect key="frame" x="362.5" y="0.0" width="27.5" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="I9G-oO-asb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                        <state key="normal" title="Search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSearch:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nlV-KU-qSI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bCW-2e-CVT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QQZ-y5-cpJ" secondAttribute="bottom" id="5T0-mf-G7g"/>
+                            <constraint firstItem="QQZ-y5-cpJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BN5-XG-jra"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QQZ-y5-cpJ" secondAttribute="trailing" id="Beh-j1-F5Q"/>
+                            <constraint firstItem="7Uu-Ul-NDk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="LRi-Ce-IEX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7Uu-Ul-NDk" secondAttribute="trailing" constant="12" id="S2z-T4-aoG"/>
+                            <constraint firstItem="7Uu-Ul-NDk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="vAm-3F-EPF"/>
+                            <constraint firstItem="QQZ-y5-cpJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="vaA-8w-2ZU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nearby" image="location.fill" catalog="system" id="mx4-Pz-mgK">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="checkinDatePicker" destination="iQC-Tw-SNP" id="yQe-Az-HcZ"/>
+                        <outlet property="checkoutDatePicker" destination="Ji3-aM-UTR" id="Hy7-LO-ssw"/>
+                        <outlet property="mapView" destination="QQZ-y5-cpJ" id="oNb-BZ-egi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
